@@ -1,0 +1,25 @@
+
+{
+    "manifest_version" : 2,
+    "name" : "KA Live Notifs",
+    "version" : "0.1.0",
+    "description" : "KA live notifications",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "declarativeContent",
+        "https://www.khanacademy.org/*"
+    ],
+    "icons": {
+        "128": "icons/128.png",
+        "48": "icons/48.png",
+        "32": "icons/32.png",
+        "16": "icons/16.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.khanacademy.org/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
